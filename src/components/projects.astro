@@ -1,9 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import Lock from "../assets/lock.webp"
+---
+
 <!-- Card Blog -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Title -->
     <div class="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">Read our latest news</h2>
-      <p class="mt-1 text-gray-600">We've helped some great companies brand, design and get to market.</p>
+      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">Our latest projects</h2>
+      <p class="mt-1 text-gray-600">We've helped some secure some awesome homes & businesses.</p>
     </div>
     <!-- End Title -->
   
@@ -60,7 +65,7 @@
       <!-- Card -->
       <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition" href="#">
         <div class="aspect-w-16 aspect-h-9">
-          <img class="w-full object-cover rounded-t-xl" src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
+          <Image src={Lock} class="w-full object-cover rounded-t-xl"  alt="Blog Image">
         </div>
         <div class="p-4 md:p-5">
           <p class="mt-2 text-xs uppercase text-gray-600">
@@ -80,9 +85,9 @@
       <div class="inline-block bg-white border shadow-sm rounded-full">
         <div class="py-3 px-4 flex items-center gap-x-2">
           <p class="text-gray-600">
-            Want to read more?
+            Want to see more?
           </p>
-          <a class="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium" href="../docs/index.html">
+          <a class="inline-flex items-center gap-x-1.5 text-cyan-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium" href="../docs/index.html">
             Go here
             <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
           </a>
