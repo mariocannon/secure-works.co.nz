@@ -1,9 +1,10 @@
 ---
 import Sublayout from "./sublayout.astro";
 const { frontmatter } = Astro.props;
+
 ---
 
-<Sublayout>
+<Sublayout title={frontmatter.title}>
 <h1>{frontmatter.title}</h1>
 <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
 <p><em>{frontmatter.description}</em></p>
