@@ -1,36 +1,22 @@
 ---
-import Navbar from "../components/navbar.astro"
+import Navbar from "../components/navbar.astro";
 import Footer from "../components/footer.astro";
-
-export interface Props {
-  title: string;
-  description: string;
-}
-
-const { description, title }: Props = Astro.props;
+const { pageTitle } = Astro.props;
 ---
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content={description} />
-		<title>{title}</title>
-	</head>
-	<body>
-        <Navbar />
-		<slot />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Navbar />
+    <h1>{pageTitle}</h1>
+    <slot />
 
-		<Footer />
-
-	
-		
-
-		<script src="../../node_modules/preline/dist/preline.js"></script>
-	</body>
+    <Footer />
+    
+  </body>
 </html>
-
-
-

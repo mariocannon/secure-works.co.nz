@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'New Projects'
 pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
+description: 'This is tshe first post of my new Astro blog.'
 author: 'Mario'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
